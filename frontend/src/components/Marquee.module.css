@@ -1,0 +1,43 @@
+.marquee {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .marqueeImg {
+    width: 33vw;
+    height: 33vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .marqueeContainer {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .marqueeContent {
+    display: flex;
+    animation: marquee 15s linear infinite;
+    /* width: calc(100%); */
+  }
+
+  .spotlight h1{
+    font-size: 5vw;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-weight: bold;
+    margin: 2rem;
+
+  }
