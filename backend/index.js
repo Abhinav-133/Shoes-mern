@@ -8,6 +8,10 @@ const PORT = 9000;
 
 mongoDB();
 
+app.use("/",(req,res)=>{
+  res.send("this is onde xfile");
+});
+
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); 
   res.header(
